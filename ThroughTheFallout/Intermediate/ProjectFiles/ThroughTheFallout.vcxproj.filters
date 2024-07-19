@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ThroughTheFallout.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThroughTheFallout.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ThroughTheFalloutEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ThroughTheFallout">
+      <UniqueIdentifier>{6BC3EB15-A4FA-303A-A23C-78A7D31CF9FB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThroughTheFallout\ThroughTheFallout.Build.cs">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\ThroughTheFallout.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\ThroughTheFallout.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutCharacter.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutCharacter.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutGameMode.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutGameMode.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutPlayerController.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutPlayerController.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutProjectile.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\ThroughTheFalloutProjectile.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\TP_PickUpComponent.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\TP_PickUpComponent.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThroughTheFallout\TP_WeaponComponent.cpp">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThroughTheFallout\TP_WeaponComponent.h">
+      <Filter>Source\ThroughTheFallout</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

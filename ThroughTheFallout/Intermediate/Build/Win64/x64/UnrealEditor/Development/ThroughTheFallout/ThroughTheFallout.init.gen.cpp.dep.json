@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\unrealeditor\\inc\\throughthefallout\\uht\\throughthefallout.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\x64\\throughthefallouteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\throughthefallout\\definitions.throughthefallout.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
