@@ -4,7 +4,7 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-// IWYU pragma: private, include "ThroughTheFalloutProjectile.h"
+// IWYU pragma: private, include "Interaction/ThroughTheFalloutProjectile.h"
 #include "UObject/ObjectMacros.h"
 #include "UObject/ScriptMacros.h"
 
@@ -17,11 +17,11 @@ struct FHitResult;
 #endif
 #define THROUGHTHEFALLOUT_ThroughTheFalloutProjectile_generated_h
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAThroughTheFalloutProjectile(); \
 	friend struct Z_Construct_UClass_AThroughTheFalloutProjectile_Statics; \
@@ -32,7 +32,7 @@ public: \
 
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AThroughTheFalloutProjectile(AThroughTheFalloutProjectile&&); \
@@ -44,13 +44,13 @@ public: \
 	NO_API virtual ~AThroughTheFalloutProjectile();
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_12_PROLOG
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_GENERATED_BODY \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_12_PROLOG
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_INCLASS_NO_PURE_DECLS \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_15_ENHANCED_CONSTRUCTORS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_INCLASS_NO_PURE_DECLS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,7 +58,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> THROUGHTHEFALLOUT_API UClass* StaticClass<class AThroughTheFalloutProjectile>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h
+#define CURRENT_FILE_ID FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -4,13 +4,13 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-// IWYU pragma: private, include "TP_PickUpComponent.h"
+// IWYU pragma: private, include "Interaction/TP_PickUpComponent.h"
 #include "UObject/ObjectMacros.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
-class AThroughTheFalloutCharacter;
+class AFalloutPlayerCharacter;
 class UPrimitiveComponent;
 struct FHitResult;
 #ifdef THROUGHTHEFALLOUT_TP_PickUpComponent_generated_h
@@ -18,15 +18,15 @@ struct FHitResult;
 #endif
 #define THROUGHTHEFALLOUT_TP_PickUpComponent_generated_h
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_12_DELEGATE \
-THROUGHTHEFALLOUT_API void FOnPickUp_DelegateWrapper(const FMulticastScriptDelegate& OnPickUp, AThroughTheFalloutCharacter* PickUpCharacter);
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_12_DELEGATE \
+THROUGHTHEFALLOUT_API void FOnPickUp_DelegateWrapper(const FMulticastScriptDelegate& OnPickUp, AFalloutPlayerCharacter* PickUpCharacter);
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnSphereBeginOverlap);
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTP_PickUpComponent(); \
 	friend struct Z_Construct_UClass_UTP_PickUpComponent_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(UTP_PickUpComponent)
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UTP_PickUpComponent(UTP_PickUpComponent&&); \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~UTP_PickUpComponent();
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_14_PROLOG
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_GENERATED_BODY \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_14_PROLOG
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,7 +61,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> THROUGHTHEFALLOUT_API UClass* StaticClass<class UTP_PickUpComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h
+#define CURRENT_FILE_ID FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

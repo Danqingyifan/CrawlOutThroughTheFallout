@@ -6,7 +6,7 @@
         "PCH": "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\x64\\throughthefallouteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
             "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\throughthefallout\\definitions.throughthefallout.h",
-            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\throughthefalloutgamemode.h",
+            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\public\\game\\throughthefalloutgamemode.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
             "e:\\unreal\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",

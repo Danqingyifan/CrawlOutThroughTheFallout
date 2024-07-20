@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ThroughTheFallout/TP_PickUpComponent.h"
+#include "ThroughTheFallout/Public/Interaction/TP_PickUpComponent.h"
 #include "Runtime/Engine/Classes/Engine/HitResult.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTP_PickUpComponent() {}
@@ -15,7 +15,7 @@ ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USphereComponent();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
-THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_AThroughTheFalloutCharacter_NoRegister();
+THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_AFalloutPlayerCharacter_NoRegister();
 THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_UTP_PickUpComponent();
 THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_UTP_PickUpComponent_NoRegister();
 THROUGHTHEFALLOUT_API UFunction* Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature();
@@ -27,14 +27,14 @@ struct Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignatu
 {
 	struct _Script_ThroughTheFallout_eventOnPickUp_Parms
 	{
-		AThroughTheFalloutCharacter* PickUpCharacter;
+		AFalloutPlayerCharacter* PickUpCharacter;
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// Declaration of the delegate that will be called when someone picks this up\n// The character picking this up is the parameter sent with the notification\n" },
 #endif
-		{ "ModuleRelativePath", "TP_PickUpComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_PickUpComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Declaration of the delegate that will be called when someone picks this up\nThe character picking this up is the parameter sent with the notification" },
 #endif
@@ -44,7 +44,7 @@ struct Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignatu
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature_Statics::NewProp_PickUpCharacter = { "PickUpCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ThroughTheFallout_eventOnPickUp_Parms, PickUpCharacter), Z_Construct_UClass_AThroughTheFalloutCharacter_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature_Statics::NewProp_PickUpCharacter = { "PickUpCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ThroughTheFallout_eventOnPickUp_Parms, PickUpCharacter), Z_Construct_UClass_AFalloutPlayerCharacter_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature_Statics::NewProp_PickUpCharacter,
 };
@@ -60,11 +60,11 @@ UFunction* Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSig
 	}
 	return ReturnFunction;
 }
-void FOnPickUp_DelegateWrapper(const FMulticastScriptDelegate& OnPickUp, AThroughTheFalloutCharacter* PickUpCharacter)
+void FOnPickUp_DelegateWrapper(const FMulticastScriptDelegate& OnPickUp, AFalloutPlayerCharacter* PickUpCharacter)
 {
 	struct _Script_ThroughTheFallout_eventOnPickUp_Parms
 	{
-		AThroughTheFalloutCharacter* PickUpCharacter;
+		AFalloutPlayerCharacter* PickUpCharacter;
 	};
 	_Script_ThroughTheFallout_eventOnPickUp_Parms Parms;
 	Parms.PickUpCharacter=PickUpCharacter;
@@ -89,7 +89,7 @@ struct Z_Construct_UFunction_UTP_PickUpComponent_OnSphereBeginOverlap_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Code for when something overlaps this component */" },
 #endif
-		{ "ModuleRelativePath", "TP_PickUpComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_PickUpComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Code for when something overlaps this component" },
 #endif
@@ -181,16 +181,16 @@ struct Z_Construct_UClass_UTP_PickUpComponent_Statics
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Object LOD Lighting TextureStreaming Object LOD Lighting TextureStreaming Activation Components|Activation Trigger VirtualTexture" },
-		{ "IncludePath", "TP_PickUpComponent.h" },
+		{ "IncludePath", "Interaction/TP_PickUpComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "TP_PickUpComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_PickUpComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPickUp_MetaData[] = {
 		{ "Category", "Interaction" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Delegate to whom anyone can subscribe to receive this event */" },
 #endif
-		{ "ModuleRelativePath", "TP_PickUpComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_PickUpComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate to whom anyone can subscribe to receive this event" },
 #endif
@@ -200,7 +200,7 @@ struct Z_Construct_UClass_UTP_PickUpComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UTP_PickUpComponent_OnSphereBeginOverlap, "OnSphereBeginOverlap" }, // 3844007332
+		{ &Z_Construct_UFunction_UTP_PickUpComponent_OnSphereBeginOverlap, "OnSphereBeginOverlap" }, // 2134879922
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -208,7 +208,7 @@ struct Z_Construct_UClass_UTP_PickUpComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTP_PickUpComponent_Statics::NewProp_OnPickUp = { "OnPickUp", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTP_PickUpComponent, OnPickUp), Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPickUp_MetaData), NewProp_OnPickUp_MetaData) }; // 3009226619
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTP_PickUpComponent_Statics::NewProp_OnPickUp = { "OnPickUp", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTP_PickUpComponent, OnPickUp), Z_Construct_UDelegateFunction_ThroughTheFallout_OnPickUp__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPickUp_MetaData), NewProp_OnPickUp_MetaData) }; // 1107922899
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTP_PickUpComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTP_PickUpComponent_Statics::NewProp_OnPickUp,
 };
@@ -250,14 +250,14 @@ UTP_PickUpComponent::~UTP_PickUpComponent() {}
 // End Class UTP_PickUpComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTP_PickUpComponent, UTP_PickUpComponent::StaticClass, TEXT("UTP_PickUpComponent"), &Z_Registration_Info_UClass_UTP_PickUpComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTP_PickUpComponent), 2686185212U) },
+		{ Z_Construct_UClass_UTP_PickUpComponent, UTP_PickUpComponent::StaticClass, TEXT("UTP_PickUpComponent"), &Z_Registration_Info_UClass_UTP_PickUpComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTP_PickUpComponent), 2902930237U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_3625683325(TEXT("/Script/ThroughTheFallout"),
-	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_PickUpComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_1660516954(TEXT("/Script/ThroughTheFallout"),
+	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_PickUpComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

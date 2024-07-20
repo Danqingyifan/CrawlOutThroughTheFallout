@@ -1,17 +1,18 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\tp_pickupcomponent.cpp",
+        "Source": "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\private\\interaction\\tp_pickupcomponent.cpp",
         "ProvidedModule": "",
         "PCH": "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\x64\\throughthefallouteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
             "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\throughthefallout\\definitions.throughthefallout.h",
-            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\tp_pickupcomponent.h",
+            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\public\\interaction\\tp_pickupcomponent.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
             "e:\\unreal\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
             "e:\\unreal\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h",
-            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\throughthefalloutcharacter.h",
+            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\public\\character\\falloutplayercharacter.h",
+            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\source\\throughthefallout\\public\\character\\throughthefalloutcharacter.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
@@ -20,7 +21,10 @@
             "e:\\unreal\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
             "e:\\unreal\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
             "e:\\unreal\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "e:\\unreal\\ue_5.4\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\abilitysysteminterface.h",
+            "e:\\unreal\\ue_5.4\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysysteminterface.generated.h",
             "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\unrealeditor\\inc\\throughthefallout\\uht\\throughthefalloutcharacter.generated.h",
+            "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\unrealeditor\\inc\\throughthefallout\\uht\\falloutplayercharacter.generated.h",
             "f:\\workspace\\crawloutthroughthefallout\\throughthefallout\\intermediate\\build\\win64\\unrealeditor\\inc\\throughthefallout\\uht\\tp_pickupcomponent.generated.h"
         ],
         "ImportedModules": [],

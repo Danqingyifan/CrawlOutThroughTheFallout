@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ThroughTheFallout/ThroughTheFalloutProjectile.h"
+#include "ThroughTheFallout/Public/Interaction/ThroughTheFalloutProjectile.h"
 #include "Runtime/Engine/Classes/Engine/HitResult.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeThroughTheFalloutProjectile() {}
@@ -39,7 +39,7 @@ struct Z_Construct_UFunction_AThroughTheFalloutProjectile_OnHit_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** called when projectile hits something */" },
 #endif
-		{ "ModuleRelativePath", "ThroughTheFalloutProjectile.h" },
+		{ "ModuleRelativePath", "Public/Interaction/ThroughTheFalloutProjectile.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "called when projectile hits something" },
 #endif
@@ -118,8 +118,8 @@ struct Z_Construct_UClass_AThroughTheFalloutProjectile_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-		{ "IncludePath", "ThroughTheFalloutProjectile.h" },
-		{ "ModuleRelativePath", "ThroughTheFalloutProjectile.h" },
+		{ "IncludePath", "Interaction/ThroughTheFalloutProjectile.h" },
+		{ "ModuleRelativePath", "Public/Interaction/ThroughTheFalloutProjectile.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CollisionComp_MetaData[] = {
 		{ "Category", "Projectile" },
@@ -127,7 +127,7 @@ struct Z_Construct_UClass_AThroughTheFalloutProjectile_Statics
 		{ "Comment", "/** Sphere collision component */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "ThroughTheFalloutProjectile.h" },
+		{ "ModuleRelativePath", "Public/Interaction/ThroughTheFalloutProjectile.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sphere collision component" },
 #endif
@@ -139,7 +139,7 @@ struct Z_Construct_UClass_AThroughTheFalloutProjectile_Statics
 		{ "Comment", "/** Projectile movement component */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "ThroughTheFalloutProjectile.h" },
+		{ "ModuleRelativePath", "Public/Interaction/ThroughTheFalloutProjectile.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Projectile movement component" },
 #endif
@@ -150,7 +150,7 @@ struct Z_Construct_UClass_AThroughTheFalloutProjectile_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AThroughTheFalloutProjectile_OnHit, "OnHit" }, // 1607110133
+		{ &Z_Construct_UFunction_AThroughTheFalloutProjectile_OnHit, "OnHit" }, // 2044693795
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -202,14 +202,14 @@ AThroughTheFalloutProjectile::~AThroughTheFalloutProjectile() {}
 // End Class AThroughTheFalloutProjectile
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_Statics
+struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AThroughTheFalloutProjectile, AThroughTheFalloutProjectile::StaticClass, TEXT("AThroughTheFalloutProjectile"), &Z_Registration_Info_UClass_AThroughTheFalloutProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AThroughTheFalloutProjectile), 3929314086U) },
+		{ Z_Construct_UClass_AThroughTheFalloutProjectile, AThroughTheFalloutProjectile::StaticClass, TEXT("AThroughTheFalloutProjectile"), &Z_Registration_Info_UClass_AThroughTheFalloutProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AThroughTheFalloutProjectile), 2481681230U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_3714597967(TEXT("/Script/ThroughTheFallout"),
-	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutProjectile_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_3982633832(TEXT("/Script/ThroughTheFallout"),
+	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_ThroughTheFalloutProjectile_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

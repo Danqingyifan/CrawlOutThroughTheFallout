@@ -4,7 +4,7 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-// IWYU pragma: private, include "ThroughTheFalloutCharacter.h"
+// IWYU pragma: private, include "Character/ThroughTheFalloutCharacter.h"
 #include "UObject/ObjectMacros.h"
 #include "UObject/ScriptMacros.h"
 
@@ -14,16 +14,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define THROUGHTHEFALLOUT_ThroughTheFalloutCharacter_generated_h
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h_22_INCLASS_NO_PURE_DECLS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAThroughTheFalloutCharacter(); \
 	friend struct Z_Construct_UClass_AThroughTheFalloutCharacter_Statics; \
 public: \
 	DECLARE_CLASS(AThroughTheFalloutCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ThroughTheFallout"), NO_API) \
-	DECLARE_SERIALIZER(AThroughTheFalloutCharacter)
+	DECLARE_SERIALIZER(AThroughTheFalloutCharacter) \
+	virtual UObject* _getUObject() const override { return const_cast<AThroughTheFalloutCharacter*>(this); }
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AThroughTheFalloutCharacter(AThroughTheFalloutCharacter&&); \
@@ -35,12 +36,12 @@ public: \
 	NO_API virtual ~AThroughTheFalloutCharacter();
 
 
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h_19_PROLOG
-#define FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h_22_GENERATED_BODY \
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h_11_PROLOG
+#define FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h_22_INCLASS_NO_PURE_DECLS \
-	FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h_22_ENHANCED_CONSTRUCTORS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -48,7 +49,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> THROUGHTHEFALLOUT_API UClass* StaticClass<class AThroughTheFalloutCharacter>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutCharacter_h
+#define CURRENT_FILE_ID FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Character_ThroughTheFalloutCharacter_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

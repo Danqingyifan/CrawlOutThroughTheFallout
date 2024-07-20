@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ThroughTheFallout/TP_WeaponComponent.h"
+#include "ThroughTheFallout/Public/Interaction/TP_WeaponComponent.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTP_WeaponComponent() {}
 
@@ -18,7 +18,7 @@ ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 ENGINE_API UEnum* Z_Construct_UEnum_Engine_EEndPlayReason();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
-THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_AThroughTheFalloutCharacter_NoRegister();
+THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_AFalloutPlayerCharacter_NoRegister();
 THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_AThroughTheFalloutProjectile_NoRegister();
 THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_UTP_WeaponComponent();
 THROUGHTHEFALLOUT_API UClass* Z_Construct_UClass_UTP_WeaponComponent_NoRegister();
@@ -30,7 +30,7 @@ struct Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon_Statics
 {
 	struct TP_WeaponComponent_eventAttachWeapon_Parms
 	{
-		AThroughTheFalloutCharacter* TargetCharacter;
+		AFalloutPlayerCharacter* TargetCharacter;
 		bool ReturnValue;
 	};
 #if WITH_METADATA
@@ -39,7 +39,7 @@ struct Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Attaches the actor to a FirstPersonCharacter */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attaches the actor to a FirstPersonCharacter" },
 #endif
@@ -51,7 +51,7 @@ struct Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon_Statics::NewProp_TargetCharacter = { "TargetCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TP_WeaponComponent_eventAttachWeapon_Parms, TargetCharacter), Z_Construct_UClass_AThroughTheFalloutCharacter_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon_Statics::NewProp_TargetCharacter = { "TargetCharacter", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TP_WeaponComponent_eventAttachWeapon_Parms, TargetCharacter), Z_Construct_UClass_AFalloutPlayerCharacter_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((TP_WeaponComponent_eventAttachWeapon_Parms*)Obj)->ReturnValue = 1;
@@ -75,7 +75,7 @@ UFunction* Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon()
 }
 DEFINE_FUNCTION(UTP_WeaponComponent::execAttachWeapon)
 {
-	P_GET_OBJECT(AThroughTheFalloutCharacter,Z_Param_TargetCharacter);
+	P_GET_OBJECT(AFalloutPlayerCharacter,Z_Param_TargetCharacter);
 	P_FINISH;
 	P_NATIVE_BEGIN;
 	*(bool*)Z_Param__Result=P_THIS->AttachWeapon(Z_Param_TargetCharacter);
@@ -95,7 +95,7 @@ struct Z_Construct_UFunction_UTP_WeaponComponent_EndPlay_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Ends gameplay for this component. */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ends gameplay for this component." },
 #endif
@@ -143,7 +143,7 @@ struct Z_Construct_UFunction_UTP_WeaponComponent_Fire_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Make the weapon Fire a Projectile */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Make the weapon Fire a Projectile" },
 #endif
@@ -194,16 +194,16 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Object Mesh|SkeletalAsset Object Mobility Trigger" },
-		{ "IncludePath", "TP_WeaponComponent.h" },
+		{ "IncludePath", "Interaction/TP_WeaponComponent.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
 		{ "Category", "Projectile" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Projectile class to spawn */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Projectile class to spawn" },
 #endif
@@ -213,7 +213,7 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Sound to play each time we fire */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sound to play each time we fire" },
 #endif
@@ -223,7 +223,7 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** AnimMontage to play each time we fire */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "AnimMontage to play each time we fire" },
 #endif
@@ -233,7 +233,7 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Gun muzzle's offset from the characters location */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gun muzzle's offset from the characters location" },
 #endif
@@ -244,7 +244,7 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** MappingContext */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MappingContext" },
 #endif
@@ -255,7 +255,7 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Fire Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TP_WeaponComponent.h" },
+		{ "ModuleRelativePath", "Public/Interaction/TP_WeaponComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fire Input Action" },
 #endif
@@ -270,9 +270,9 @@ struct Z_Construct_UClass_UTP_WeaponComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon, "AttachWeapon" }, // 4254440110
-		{ &Z_Construct_UFunction_UTP_WeaponComponent_EndPlay, "EndPlay" }, // 3872396419
-		{ &Z_Construct_UFunction_UTP_WeaponComponent_Fire, "Fire" }, // 581434982
+		{ &Z_Construct_UFunction_UTP_WeaponComponent_AttachWeapon, "AttachWeapon" }, // 130936333
+		{ &Z_Construct_UFunction_UTP_WeaponComponent_EndPlay, "EndPlay" }, // 720097643
+		{ &Z_Construct_UFunction_UTP_WeaponComponent_Fire, "Fire" }, // 1919645071
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -332,14 +332,14 @@ UTP_WeaponComponent::~UTP_WeaponComponent() {}
 // End Class UTP_WeaponComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_WeaponComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_WeaponComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTP_WeaponComponent, UTP_WeaponComponent::StaticClass, TEXT("UTP_WeaponComponent"), &Z_Registration_Info_UClass_UTP_WeaponComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTP_WeaponComponent), 1199908905U) },
+		{ Z_Construct_UClass_UTP_WeaponComponent, UTP_WeaponComponent::StaticClass, TEXT("UTP_WeaponComponent"), &Z_Registration_Info_UClass_UTP_WeaponComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTP_WeaponComponent), 1008830338U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_WeaponComponent_h_1619740331(TEXT("/Script/ThroughTheFallout"),
-	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_WeaponComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_TP_WeaponComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_WeaponComponent_h_73663077(TEXT("/Script/ThroughTheFallout"),
+	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_WeaponComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Interaction_TP_WeaponComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

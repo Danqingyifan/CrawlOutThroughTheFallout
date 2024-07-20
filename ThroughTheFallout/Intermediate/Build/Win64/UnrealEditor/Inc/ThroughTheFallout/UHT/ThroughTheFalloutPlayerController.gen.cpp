@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ThroughTheFallout/ThroughTheFalloutPlayerController.h"
+#include "ThroughTheFallout/Public/Player/ThroughTheFalloutPlayerController.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeThroughTheFalloutPlayerController() {}
 
@@ -34,15 +34,15 @@ struct Z_Construct_UClass_AThroughTheFalloutPlayerController_Statics
 		{ "Comment", "/**\n *\n */" },
 #endif
 		{ "HideCategories", "Collision Rendering Transformation" },
-		{ "IncludePath", "ThroughTheFalloutPlayerController.h" },
-		{ "ModuleRelativePath", "ThroughTheFalloutPlayerController.h" },
+		{ "IncludePath", "Player/ThroughTheFalloutPlayerController.h" },
+		{ "ModuleRelativePath", "Public/Player/ThroughTheFalloutPlayerController.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputMappingContext_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Input Mapping Context to be used for player input */" },
 #endif
-		{ "ModuleRelativePath", "ThroughTheFalloutPlayerController.h" },
+		{ "ModuleRelativePath", "Public/Player/ThroughTheFalloutPlayerController.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Input Mapping Context to be used for player input" },
 #endif
@@ -99,14 +99,14 @@ AThroughTheFalloutPlayerController::~AThroughTheFalloutPlayerController() {}
 // End Class AThroughTheFalloutPlayerController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutPlayerController_h_Statics
+struct Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Player_ThroughTheFalloutPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AThroughTheFalloutPlayerController, AThroughTheFalloutPlayerController::StaticClass, TEXT("AThroughTheFalloutPlayerController"), &Z_Registration_Info_UClass_AThroughTheFalloutPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AThroughTheFalloutPlayerController), 2144119830U) },
+		{ Z_Construct_UClass_AThroughTheFalloutPlayerController, AThroughTheFalloutPlayerController::StaticClass, TEXT("AThroughTheFalloutPlayerController"), &Z_Registration_Info_UClass_AThroughTheFalloutPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AThroughTheFalloutPlayerController), 3645389785U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutPlayerController_h_452672627(TEXT("/Script/ThroughTheFallout"),
-	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_ThroughTheFalloutPlayerController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Player_ThroughTheFalloutPlayerController_h_313023438(TEXT("/Script/ThroughTheFallout"),
+	Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Player_ThroughTheFalloutPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ThroughTheFallout_Source_ThroughTheFallout_Public_Player_ThroughTheFalloutPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
