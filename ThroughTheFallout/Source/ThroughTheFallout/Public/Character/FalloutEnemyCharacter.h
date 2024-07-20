@@ -15,6 +15,6 @@ class THROUGHTHEFALLOUT_API AFalloutEnemyCharacter : public AThroughTheFalloutCh
 	GENERATED_BODY()
 public:
 	AFalloutEnemyCharacter();
-
+	virtual void BeginPlay();
 private:
 };

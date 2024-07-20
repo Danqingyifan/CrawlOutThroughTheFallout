@@ -13,7 +13,6 @@ class THROUGHTHEFALLOUT_API AFalloutPlayerState : public APlayerState,public IAb
 	GENERATED_BODY()
 public:
 	AFalloutPlayerState();
-protected:
 	virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	class UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 

@@ -1,9 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-
+// Self
 #include "Character/FalloutPlayerCharacter.h"
+#include "Player/FalloutPlayerState.h"
 #include "Interaction/ThroughTheFalloutProjectile.h"
+#include "AbilitySystem/FalloutAbilitySystemComponent.h"
+#include "AbilitySystem/FalloutAttributeSet.h"
+
+// Built-in
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -12,6 +17,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Engine/LocalPlayer.h"
+
 
 AFalloutPlayerCharacter::AFalloutPlayerCharacter()
 {
@@ -32,7 +38,6 @@ AFalloutPlayerCharacter::AFalloutPlayerCharacter()
 	Mesh1P->CastShadow = false;
 	//Mesh1P->SetRelativeRotation(FRotator(0.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-30.f, 0.f, -150.f));
-
 }
 
 void AFalloutPlayerCharacter::BeginPlay()
@@ -41,8 +46,32 @@ void AFalloutPlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 }
 
-//////////////////////////////////////////////////////////////////////////// Input
+void AFalloutPlayerCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
 
+	//Init for The Server
+	InitAbilityActorInfo();
+}
+
+void AFalloutPlayerCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+
+	//Init for The Client
+	InitAbilityActorInfo();
+}
+
+void AFalloutPlayerCharacter::InitAbilityActorInfo()
+{
+	AFalloutPlayerState* FalloutPlayerState = GetPlayerState<AFalloutPlayerState>();
+	check(FalloutPlayerState);
+	FalloutPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(FalloutPlayerState, this);
+	
+	AbilitySystemComponent = FalloutPlayerState->GetAbilitySystemComponent();
+	AttributeSet = FalloutPlayerState->GetAttributeSet();
+}
+// ----------------------------------- INPUT -----------------------------------
 void AFalloutPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up action bindings
@@ -59,7 +88,6 @@ void AFalloutPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerI
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AFalloutPlayerCharacter::Look);
 	}
 }
-
 
 void AFalloutPlayerCharacter::Move(const FInputActionValue& Value)
 {

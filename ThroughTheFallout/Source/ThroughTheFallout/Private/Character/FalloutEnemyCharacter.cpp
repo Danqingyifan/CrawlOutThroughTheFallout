@@ -17,3 +17,9 @@ AFalloutEnemyCharacter::AFalloutEnemyCharacter()
     // AttributeSet
     AttributeSet = CreateDefaultSubobject<UAttributeSet>("AttributeSet");
 }
+
+void AFalloutEnemyCharacter::BeginPlay()
+{
+    Super::BeginPlay();
+    AbilitySystemComponent->InitAbilityActorInfo(this, this);
+}
